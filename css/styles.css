@@ -415,6 +415,7 @@ img {
 
 .customer-icons-list{
   margin-top: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   gap: 30px
@@ -436,3 +437,14 @@ img {
   color: var(--lightslate);
 }
 
+.customer-section{
+  padding: 120px 0;
+}
+
+.customer-title {
+  text-align: center;
+  color: var(--navyblue);
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+}
