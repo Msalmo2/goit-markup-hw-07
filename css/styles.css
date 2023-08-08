@@ -9,7 +9,8 @@
   --navwhite: white;
   --navcloud: #f4f4fd;
   --navcornflower: #e7e9fc;
-  --lightslate: #8E8F99
+  --lightslate: #8E8F99;
+  --grey: #2E2F42;
 }
 
 body {
@@ -162,6 +163,10 @@ img {
 
 .bg-hero {
   background-color: var(--navyblue);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.70)), url(/images/people-office\ 2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero {
