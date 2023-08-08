@@ -11,6 +11,7 @@
   --navcornflower: #e7e9fc;
   --lightslate: #8E8F99;
   --grey: #2E2F42;
+  --green: #31D0AA;
 }
 
 body {
@@ -288,7 +289,7 @@ img {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 30px
+  gap: 25px
 }
 
 .team-social-item{
@@ -314,7 +315,7 @@ img {
 
 .team-social-link:hover, 
 .team-social-link:focus{
-  background-color: var(--navocean);
+  background-color: var(--green);
 }
 
 .substrate {
@@ -330,6 +331,46 @@ img {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 600px;
+
+}
+
+.footer-icons-list{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px
+}
+
+.footer-social-item{
+  width: 40px;
+  height: 40px;
+
+}
+
+.footer-social-link{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navcloud);
+  background-color: var(--iriscolor);
+}
+
+.footer-media-icon{
+  fill: currentColor;
+}
+
+.footer-social-link:hover, 
+.footer-social-link:focus{
+  background-color: var(--navocean);
 }
 
 .filter {
@@ -423,24 +464,38 @@ img {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  gap: 30px
+  align-items: flex-start;
+  gap: 24px;
+  
+
 }
 
 .customer-icon-item{
-  width: 100px;
-  height: 100px;
+  width: 168px;
+  height: 88px;
+
 
 }
 
 .customer-link{
   width: 100%;
   height: 100%;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 8px;
+  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--lightslate);
+  border-color: var(--lightslate);
+  background-color: var(--navwhite);
+  margin-top: 50px;
 }
+
+
+.footer-social-link:hover, 
+.footer-social-link:focus{
+  background-color: var(--green);
+}
+
 
 .customer-section{
   padding: 120px 0;
@@ -451,5 +506,6 @@ img {
   color: var(--navyblue);
   font-size: 36px;
   line-height: 1.17;
-  font-weight: 700;
+  font-weight: 700px;
 }
+
