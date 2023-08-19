@@ -29,7 +29,9 @@
           </a>
           <ul class="nav-menu list">
             <li class="item">
-              <a href="./index.html" class="page current link menu-active">Studio</a>
+              <a href="./index.html" class="page current link menu-active"
+                >Studio</a
+              >
             </li>
             <li class="item">
               <a href="./portfolio.html" class="page link">Portfolio</a>
@@ -59,7 +61,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
-          <button type="button" class="button primary" data-modal-open>Order Services</button>
+          <button type="button" class="button primary" data-modal-open>
+            Order Services
+          </button>
         </div>
       </section>
       <!-- Section 2 -->
@@ -450,7 +454,9 @@
             <li class="customer-icon-item">
               <a class="customer-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-icon-Logo-5-1-2"></use></svg
+                  <use
+                    href="./images/icons.svg#icon-icon-Logo-5-1-2"
+                  ></use></svg
               ></a>
             </li>
             <li class="customer-icon-item">
@@ -549,6 +555,27 @@
               </li>
             </ul>
           </div>
+          <!-- Sub Footer 3 -->
+          <div class="footer-container footer-form">
+            <form name="subscribe-form" autocomplete="on" method="">
+              <label class="footer-label-subscribe">
+                <span class="footer-subscribe-title">Subscribe</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="footer-form-input"
+                  required
+                />
+              </label>
+              <button type="submit" class="footer-form-button">
+                Subscribe
+                <svg class="footer-icon-subscribe">
+                  <use href="./images/icons.svg#icon-Frame-3-1"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -559,7 +586,63 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form clasname="signup_form" autocomplete="on" novalidate>
+          <label class="label-form">
+            <span class="form-title">Name</span>
+            <input class="input-form" type="text" name="user-name" autofocus />
+            <svg class="form-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </label>
+
+          <label class="label-form">
+            <span class="form-title">Phone</span>
+            <input class="input-form" type="tel" name="user-phone" />
+            <svg class="form-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </label>
+
+          <label class="label-form">
+            <span class="form-title">Email</span>
+            <input class="input-form" type="email" name="user-email" />
+            <svg class="form-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </label>
+
+          <label class="label-form">
+            <span class="form-title">Comment</span>
+            <textarea
+              class="form-textarea"
+              name="comment"
+              rows="8"
+              placeholder="Text Input"
+            ></textarea>
+          </label>
+          <label class="label-agree-box">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-terms"
+            />
+            <svg class="form-checkbox-icon" width="16" height="16">
+              <use href="./images/icons.svg#check-mark"></use>
+            </svg>
+            <span
+              >I accept the terms and conditions of the
+              <a class="" href="">Privacy Policy</a></span
+            >
+          </label>
+          <button type="submit" class="button-form-agree primary">
+            Submit
+          </button>
+        </form>
       </div>
-      <script src="./js/modal.js"></script>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
