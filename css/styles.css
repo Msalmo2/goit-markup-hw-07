@@ -60,9 +60,18 @@ img {
   color: inherit;
 }
 
-.menu,
-.navigation,
-.nav-menu,
+.menu {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
 .contacts-menu {
   display: flex;
   align-items: center;
@@ -145,12 +154,18 @@ img {
 }
 
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.04em;
   color: var(--navwhite);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+  }
 }
 
 .bg-team {
@@ -232,7 +247,6 @@ img {
 
 .section {
   padding: 96px 0;
-  /* padding: 96px 0; mobile */
 }
 
 /* desktop screen */

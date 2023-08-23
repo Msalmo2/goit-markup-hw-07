@@ -155,5 +155,8 @@
 <symbol id="check-mark" viewBox="0 0 42 32">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z"></path>
 </symbol>
+<symbol id="icon-charm_menu-hamburger" viewBox="0 0 47 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
+</symbol>
 </defs>
 </svg>
