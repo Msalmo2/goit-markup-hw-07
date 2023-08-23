@@ -196,10 +196,17 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-d.png);
+    url(../images/people-office-m.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/people-office-m@2x.jpg);
+  }
 }
 
 .button {
@@ -316,12 +323,9 @@ img {
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -24px;
-  margin-left: -24px;
-}
-
-.teams {
+  align-items: center;
   justify-content: center;
+  gap: 64px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -331,7 +335,6 @@ img {
 }
 
 .team .team-item {
-  flex-direction: column;
   margin-left: 30px;
   margin-top: 30px;
   padding-bottom: 30px;
