@@ -94,6 +94,7 @@ img {
 .logo-link {
   text-decoration: none;
   font-size: 0;
+  text-align: center;
 }
 
 .logo-link > span {
@@ -115,6 +116,7 @@ img {
 
 .page-footer .studio-footer {
   color: var(--navcloud);
+  text-align: justify;
 }
 
 .footer-description {
@@ -123,6 +125,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   padding-top: 17px;
+  text-align: justify;
 }
 
 .nav-menu .page,
@@ -274,11 +277,18 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.hidden {
+  display: none;
+}
+
 .benefits {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  /* margin-left: -30px; */
+  /* margin-top: -30px; */
+  text-align: center;
+  font-size: 36px;
+  gap: 72px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -289,8 +299,8 @@ img {
 
 .benefits-item {
   flex-basis: 100%;
-  margin-left: 30px;
-  margin-top: 30px;
+  /* margin-left: 30px;
+  margin-top: 30px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -309,6 +319,12 @@ img {
 
 .section {
   padding: 96px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 96px 0;
+  }
 }
 
 /* desktop screen */
@@ -362,6 +378,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 70px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -371,8 +388,8 @@ img {
 }
 
 .team .team-item {
-  margin-left: 30px;
-  margin-top: 30px;
+  /* margin-left: 30px;
+  margin-top: 30px; */
   padding-bottom: 30px;
   background-color: var(--navwhite);
   border-radius: 0px 0px 4px 4px;
@@ -477,6 +494,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  vertical-align: middle;
+  justify-content: center;
+  gap: 70px;
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    vertical-align: middle;
+    justify-content: center;
+    gap: 0 auto;
+  }
 }
 
 .icon-link:hover,
@@ -545,7 +576,7 @@ img {
 
 .container {
   /* width: 1200px; */
-  width: 428px;
+  /* width: 428px; */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -586,6 +617,10 @@ img {
 }
 
 .projects {
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -593,10 +628,29 @@ img {
 }
 
 .project-card {
-  flex-basis: calc(100% / 3 - 30px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out; */
+}
+
+@media screen and (min-width: 768px) {
+  .project-card {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .project-card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: box-shadow 250ms ease-in-out;
+  }
 }
 
 .project-card:hover {
@@ -673,10 +727,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-}
-
-.footer-block {
-  margin-left: 123px;
+  text-align: center;
 }
 
 .customer-icon-link {
@@ -712,8 +763,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 428px;
-  height: 100vh;
+  width: 100%;
   background-color: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -957,6 +1007,18 @@ img {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
 .footer-form-input::placeholder {
   color: var(--navwhite, #fff);
   font-size: 12px;
@@ -985,6 +1047,17 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .footer-form-button {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-form-button {
+    align-self: flex-end;
+  }
+}
 
 .footer-icon-subscribe {
   width: 24px;
@@ -999,7 +1072,7 @@ img {
   height: 24px;
 }
 
-.footer-container {
+/* .footer-container {
   margin-left: 125px;
   display: flex;
   align-items: flex-end;
@@ -1010,18 +1083,39 @@ img {
     display: block;
     grid-column-start: auto;
   }
-}
+} */
 
 .footer-form {
-  height: 80px;
+  /* height: 80px; */
   flex-shrink: 0;
   margin-left: 50px;
 }
 
+.footer-address {
+  text-align: center;
+}
+
 .footer-form-item {
   display: flex;
+  align-items: center;
   gap: 24px;
-  align-items: flex-end;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-form-item {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-form-item {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
 }
 
 .footer-form-title {
@@ -1041,6 +1135,21 @@ img {
   margin-top: 10px;
   justify-content: center;
   gap: 16px;
+}
+
+.footer-subscribe-title {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-subscribe-title {
+    text-align: left;
+  }
 }
 
 .form-title {
@@ -1180,7 +1289,6 @@ img {
 
 .mob-menu-address {
   font-style: normal;
-  margin-bottom: 32px;
 }
 .mob-menu-address-link {
   color: inherit;
@@ -1222,4 +1330,37 @@ img {
 
 .mob-media-icon {
   fill: currentColor;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 96px;
+    row-gap: 0;
+  }
+}
+
+.mobile-footer {
+  margin-bottom: 48px;
 }
