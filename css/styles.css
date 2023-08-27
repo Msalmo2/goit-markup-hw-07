@@ -548,7 +548,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project {
+.projects {
   font-size: 20px;
   font-weight: 500;
   line-height: 2;
@@ -566,7 +566,7 @@ img {
   margin-bottom: 4px;
 }
 
-.project {
+.projects {
   color: var(--navslate);
   font-weight: 400px;
   line-height: 1.87;
@@ -629,15 +629,23 @@ img {
   justify-content: center; */
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  gap: 34px;
+  justify-content: center;
 }
 
 .project-card {
-  width: 100%;
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 0;
+  margin-bottom: 72px;
+  margin-left: 24px;
+  /* width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
+
   /* flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -646,16 +654,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .project-card {
-    flex-basis: calc(100% / 2 - 30px);
+    width: calc((100% - 24px) / 3);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .project-card {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    transition: box-shadow 250ms ease-in-out;
+    width: calc((100% - 30px) / 4);
   }
 }
 
