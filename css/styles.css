@@ -281,6 +281,12 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .hidden {
+    display: flex;
+  }
+}
+
 .benefits {
   display: flex;
   flex-wrap: wrap;
