@@ -155,15 +155,12 @@ img {
 
 .nav-menu {
   margin-left: 93px;
+  gap: 40px;
 }
 
 .contacts-menu {
   margin-left: auto;
-}
-
-.nav-menu .item:not(:last-child),
-.contacts-menu .item:not(:last-child) {
-  margin-right: 50px;
+  gap: 8px;
 }
 
 .nav-menu .page:hover,
@@ -322,6 +319,7 @@ img {
   color: var(--navyblue);
   margin-bottom: 10px;
   line-height: 1.14;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -332,6 +330,7 @@ img {
     line-height: 40px; /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    text-align: left;
   }
 }
 
@@ -342,6 +341,7 @@ img {
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
+    text-align: left;
   }
 }
 
@@ -554,7 +554,7 @@ img {
   align-items: baseline;
   vertical-align: middle;
   justify-content: center;
-  gap: 70px;
+  gap: 72px 24px;
   width: 100%;
 }
 
@@ -602,12 +602,21 @@ img {
 }
 
 .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -48px;
+  margin-left: -24px;
   font-size: 17px;
   font-weight: 500;
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--navyblue);
   margin-bottom: 4px;
+  color: var(--navslate);
+  font-weight: 500px;
+  line-height: 1.87;
+  font-size: 16px;
 }
 
 .name {
@@ -619,12 +628,7 @@ img {
   margin-bottom: 4px;
 }
 
-.projects {
-  color: var(--navslate);
-  font-weight: 500px;
-  line-height: 1.87;
-  font-size: 16px;
-}
+
 
 .type {
   color: var(--navslate);
@@ -676,15 +680,8 @@ img {
   margin-top: 30px;
 }
 
-.projects {
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
+
 
 .project-card {
   display: block;
@@ -745,7 +742,6 @@ img {
   display: flex;
   gap: 72px 24px;
   flex-wrap: wrap;
-  margin-left: 80px;
 }
 @media screen and (min-width: 1158px) {
   .customer-icons-list {
@@ -966,6 +962,7 @@ img {
 
 .menu-active::after {
   content: "";
+  display: none;
   border: 2px solid var(--navocean);
   border-radius: 2px;
   background-color: var(--navocean);
@@ -978,7 +975,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-active::after {
-    bottom: 3px;
+    bottom: -4px;
+    display: flex;
   }
 }
 
@@ -1007,7 +1005,6 @@ img {
   .contacts-menu {
     display: flex;
     flex-direction: column;
-    margin: auto;
     padding: 0;
   }
 }
@@ -1203,7 +1200,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-right: 90px;
+    margin-right: 49px;
   }
 }
 
@@ -1532,4 +1529,10 @@ img {
 
 .footer-block {
   align-items: centers;
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-block {
+    margin-left: auto;
+  }
 }
